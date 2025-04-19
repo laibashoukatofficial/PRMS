@@ -1,0 +1,511 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Center the login form */
+body {
+            
+    background-color: #f4f4f4;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    
+    width: 90%;
+    max-width: 350px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.dashboard-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    max-width: 900px; /* Limit max width */
+    margin: auto;
+    position: relative;
+    
+}
+
+.dashboard-header {
+display: flex;
+align-items: center;
+justify-content: space-between; /* Push items to the ends */
+padding: 10px;
+background-color: #266161;
+color: white;
+}
+
+.dashboard-content {
+    margin: 10px;
+}
+
+ul.horizontal-list {
+    list-style-type: none;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul.horizontal-list li {
+    margin-right: 10px;
+}
+
+.logout-icon {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px; 
+height: 40px;
+}
+
+.logout-icon img {
+width: 24px;
+height: 24px;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+/* Button */
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input, select, button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: #007bff;
+    width: calc(100% - 20px);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+}
+button:hover {
+    background: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-edit {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.btn-delete {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Error Message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table th {
+    background-color: #266161;
+    color: white;
+}
+
+.styled-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action Buttons */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+
+
+
+/* Header Styling */
+header {
+    background: #266161; 
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00c4cc; /* Light teal for contrast */
+}
+
+/* Login Button */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100%; 
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+.auth-buttons .btn-login:hover {
+    
+    color: #00c4cc;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgb(20 77 100 / 80%), rgb(75 30 78 / 80%)), url('hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+.feature-box {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h2 {
+    color: #1E4D4E;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+/* FEATURES SECTION */
+.features {
+    display: flex;
+    justify-content: space-between;  /* Distribute items evenly */
+    align-items: stretch;  /* Make them the same height */
+    flex-wrap: wrap;  /* Ensure responsiveness */
+    gap: 20px;  /* Space between boxes */
+    padding: 50px 20px;
+    background: white;
+    text-align: center;
+}
+
+.feature-box {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 30%; /* Ensures 3 items per row */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.feature-box h2 {
+    color: #266161;
+}
+
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+    padding: 50px 0; /* Increased padding */
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 0 40px; /* Added horizontal padding */
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px; /* Ensures responsiveness */
+    padding: 10px 20px; /* Added more padding */
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: justify;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.newsletter {
+    text-align: left; /* Align text properly */
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .newsletter input,
+    .newsletter button {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column; /* Stack in mobile view */
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 80%; /* Make boxes wider on smaller screens */
+    }
+}
