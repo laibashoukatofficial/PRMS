@@ -1,13 +1,13 @@
 <?php
 $host = "sql12.freesqldatabase.com"; // Replace with your actual host if different
-$username = "sql12774261";           // Your Freesqldatabase username
-$password = "RqXnrjwjCR";          // Your Freesqldatabase password
-$database = "sql12774261";           // Your database name
+$user = "sql12774261";           // Your Freesqldatabase username
+$pass = "RqXnrjwjCR";          // Your Freesqldatabase password
+$dbname = "sql12774261";           // Your database name
 
-$connection = new mysqli($host, $username, $password, $database);
+$conn = new mysqli($host, $user, $pass, $dbname);
 
-if ($connection->connect_error) {
-    die("Connection failed: " . $connection->connect_error);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
         // Uncomment below line to check connection
