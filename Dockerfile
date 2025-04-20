@@ -1,7 +1,10 @@
 FROM php:8.2-apache
 
-# Copy your PHP files to the apache server's root directory
-COPY patient_record_system/var/www/html/
-
-# Enable Apache Rewrite Module (optional, for Laravel, routing, etc.)
+# Enable .htaccess and URL rewrite (optional)
 RUN a2enmod rewrite
+
+# Copy public folder if that's where your index.php is
+COPY patient_record_system /var/www/html/
+
+# Fix permissions
+RUN chmod -R 755 /var/www/html
