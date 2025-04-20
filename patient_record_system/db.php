@@ -1,17 +1,16 @@
 <?php
-$host = "localhost";  // Server name
-$user = "root";       // Default MySQL user
-$pass = "";           // No password by default
-$dbname = "patient_db"; // Your database name
+$host = "db4free.net";
+$username = "laibadev";         // your username
+$password = "Umar@447#";     // your password
+$database = "patient_db";       // your DB name
 
-// Create connection
-$conn = new mysqli($host, $user, $pass, $dbname);
+$connection = new mysqli($host, $username, $password, $database);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($connection->connect_error) {
+    die("Connection failed: " . $connection->connect_error);
 }
 
-// Uncomment below line to check connection
+    // Uncomment below line to check connection
 // echo "Database connected successfully!";
+    
 ?>
